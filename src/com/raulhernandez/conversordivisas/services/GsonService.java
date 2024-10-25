@@ -5,7 +5,9 @@ import com.google.gson.GsonBuilder;
 
 public class GsonService {
 
-    private static Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
+    private static Gson gson = new GsonBuilder()
+    .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+    .create();
 
     public static Gson getGson() {
         return gson;

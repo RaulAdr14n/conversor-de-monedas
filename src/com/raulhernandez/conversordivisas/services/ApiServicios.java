@@ -11,7 +11,7 @@ import java.net.http.HttpTimeoutException;
 @SuppressWarnings("unused")
 public class ApiServicios {
 
-    public String getApiResponse() {
+    public static String getApiResponse(String monedaBase) {
         String responseString = "";
 
         try {
@@ -20,7 +20,7 @@ public class ApiServicios {
             
             // Crear solicitud HTTP
             HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create("https://v6.exchangerate-api.com/v6/54cb9cebba29f0d98d77d3ad/latest/USD"))
+                    .uri(URI.create("https://v6.exchangerate-api.com/v6/54cb9cebba29f0d98d77d3ad/latest/"+monedaBase))
                     .build();
 
             // Enviar solicitud y recibir respuesta

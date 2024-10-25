@@ -1,18 +1,20 @@
-## Getting Started
+## Conversor de Monedas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este proyecto es una aplicación para la conversión de divisas que permite a los usuarios obtener el valor actual de una moneda en relación con otras. La aplicación utiliza una API de terceros para obtener tasas de cambio actualizadas en tiempo real y facilita la conversión entre varias monedas.
 
-## Folder Structure
+El proyecto fué iniciado para cumplir el Challenge Conversor de Monedas de la plataforma de aprendizaje de Alura LATAM.
 
-The workspace contains two folders by default, where:
+## Caracteristicas
+- **Monedas predefinidas**: Incluye 6 tipos de cambios predefinidos en las opciones:
+    - ARS -> USD    (Peso Argentino) -> (Dolar Estadounidense)
+    - USD -> ARS    (Dolar Estadounidense) -> (Peso Argentino)
+    - BRL -> USD    (Real Brasileno) -> (Dolar Estadounidense)
+    - USD -> BRL    (Dolar Estadounidense) -> (Real Brasileno)
+    - CLP -> USD    (Peso Chileno) -> (Dolar Estadounidense)
+    - USD -> CLP    (Dolar Estadounidense) -> (Peso Chileno)
+- **Conversion personalizada**: Incluye una opcion para convertir dos monedas que esten dentro del ISO  4217.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Requisitos
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Java** (versión 8 o superior)
+- Conexión a internet para realizar las consultas a la API de tasas de conversión
